@@ -15,6 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
         <script src="./Contact.js"></script>
+        
    
     </head>
     <body>
@@ -195,7 +196,15 @@
             <div class="CON-INF">
                 
                 <div class="info-M">
-                    <div class="info-S">
+                    <div class="TMS_DIV_BUTTON">
+                        <div  onclick="setTR()" class="TMS_DIV_TEXT NOT_TR"><p class="TMS_TEXT_P  NOT_AC_TEXT_TR">Türkiye</p></div>
+                        <div  onclick="setIC()" class="TMS_DIV_TEXT NOT_IC"><P class="TMS_TEXT_P  NOT_AC_TEXT_IC">Iceland</P></div>
+                        <div  onclick="setQA()" class="TMS_DIV_TEXT NOT_QA"><P class="TMS_TEXT_P  NOT_AC_TEXT_QA">Qatar</P></div>
+                    </div>
+
+
+                    <!-- ****** TR******** -->
+                    <div class="info-S TR_TMS">
                         <div class="info-div ">
                             <p class="info-div-TEXT-M">Adres</p>
                             <p class="info-div-TEXT-S">Terkehatipler Köyü Yağcı Mah. Çelikerler Fabrikası No:8 Kozcağız Yolu 3.Km Merkez/BARTIN</p>
@@ -216,11 +225,54 @@
                             <p class="info-div-TEXT-M">E-Posta</p>
                             <p class="info-div-TEXT-S">info@celikerler.com</p>
                         </div>
-                        
+                    </div>
 
+                    <!-- *******IC******* -->
+                    <div class="info-S IC_TMS" style="display: none;">
+                        <div class="info-div ">
+                            <p class="info-div-TEXT-M">Adres</p>
+                            <p class="info-div-TEXT-S">Terkehatipler Köyü Yağcı Mah. Çelikerler Fabrikası No:8 Kozcağız Yolu 3.Km Merkez/BARTIN</p>
+                        </div>
+                        <div class="info-div ">
+                            <p class="info-div-TEXT-M">Telefon</p>
+                            <p class="info-div-TEXT-S">+90 378 263 80 09</p>
+                        </div>
+                        <div class="info-div ">
+                            <p class="info-div-TEXT-M">Faks</p>
+                            <p class="info-div-TEXT-S">+90 378 263 80 95</p>
+                        </div>
+                        <div class="info-div ">
+                            <p class="info-div-TEXT-M">E-Posta</p>
+                            <p class="info-div-TEXT-S">satis@celikerler.com</p>
+                        </div>
+                        <div class="info-div info-div-1">
+                            <p class="info-div-TEXT-M">E-Posta</p>
+                            <p class="info-div-TEXT-S">info@celikerler.com</p>
+                        </div>
+                    </div>
 
-
-
+                    <!-- ********QA****** -->
+                    <div class="info-S QA_TMS" style="display: none;">
+                        <div class="info-div ">
+                            <p class="info-div-TEXT-M">Adres</p>
+                            <p class="info-div-TEXT-S">Terkehatipler Köyü Yağcı Mah. Çelikerler Fabrikası No:8 Kozcağız Yolu 3.Km Merkez/BARTIN</p>
+                        </div>
+                        <div class="info-div ">
+                            <p class="info-div-TEXT-M">Telefon</p>
+                            <p class="info-div-TEXT-S">+90 378 263 80 09</p>
+                        </div>
+                        <div class="info-div ">
+                            <p class="info-div-TEXT-M">Faks</p>
+                            <p class="info-div-TEXT-S">+90 378 263 80 95</p>
+                        </div>
+                        <div class="info-div ">
+                            <p class="info-div-TEXT-M">E-Posta</p>
+                            <p class="info-div-TEXT-S">satis@celikerler.com</p>
+                        </div>
+                        <div class="info-div info-div-1">
+                            <p class="info-div-TEXT-M">E-Posta</p>
+                            <p class="info-div-TEXT-S">info@celikerler.com</p>
+                        </div>
                     </div>
 
 
@@ -239,11 +291,12 @@
 
 
                         <input class="text-info-div" placeholder="Ad Soyad" name="name" type="text">
-                        <input class="text-info-div" placeholder="E-Posta" name="email" type="text">
+                        <input class="text-info-div emailTEXT" placeholder="E-Posta" name="email" type="text">
                         <input class="text-info-div" placeholder="Telefon" name="phone" type="text">
                         <input class="text-info-div" placeholder="Konu" name="subject" type="text">
-                        <textarea class="text-info-div text-info-Mesa" rows="3" placeholder="Mesajınız" name="content" cols="50"></textarea>
-                        <div class="div-B"><p>GÖNDER</p></div>
+                        <textarea class="text-info-div text-info-Mesa" rows="3" placeholder="Mesajınız" name="message" cols="50"></textarea>
+                        
+                        <button onclick="ValidateEmail()" type="submit" class="div-B"><p>GÖNDER</p></button>
 
 
                     </div>

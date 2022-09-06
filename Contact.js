@@ -103,3 +103,64 @@ document.addEventListener("DOMContentLoaded", function(){
             localStorage.setItem('lang', 'ar');
 
         }
+
+        function setTR (){
+            document.querySelector(".TR_TMS").style.display="flex"
+            document.querySelector(".QA_TMS").style.display="none"
+            document.querySelector(".IC_TMS").style.display="none"
+
+            document.querySelector(".NOT_TR").style.borderWidth="0px"
+            document.querySelector(".NOT_TR").style.backgroundColor="#1A4990"
+            document.querySelector(".NOT_AC_TEXT_TR").style.color = "#ffffff";
+
+            document.querySelector(".NOT_QA").style.borderWidth="1px"
+            document.querySelector(".NOT_QA").style.backgroundColor="#ffffff"
+            document.querySelector(".NOT_AC_TEXT_QA").style.color = "#333";
+
+            document.querySelector(".NOT_IC").style.borderWidth="1px"
+            document.querySelector(".NOT_IC").style.backgroundColor="#ffffff"
+            document.querySelector(".NOT_AC_TEXT_IC").style.color = "#333";
+
+
+        }
+        function setIC (){
+            document.querySelector(".TR_TMS").style.display="none"
+            document.querySelector(".QA_TMS").style.display="none"
+            document.querySelector(".IC_TMS").style.display="flex"
+
+            document.querySelector(".NOT_IC").style.borderWidth="0px"
+            document.querySelector(".NOT_IC").style.backgroundColor="#1A4990"
+            document.querySelector(".NOT_AC_TEXT_IC").style.color = "#ffffff";
+
+            document.querySelector(".NOT_TR").style.borderWidth="1px"
+            document.querySelector(".NOT_TR").style.backgroundColor="#ffffff"
+            document.querySelector(".NOT_AC_TEXT_TR").style.color = "#333";
+
+            document.querySelector(".NOT_QA").style.borderWidth="1px"
+            document.querySelector(".NOT_QA").style.backgroundColor="#ffffff"
+            document.querySelector(".NOT_AC_TEXT_QA").style.color = "#333";
+
+
+
+        }
+        function setQA (){
+            document.querySelector(".TR_TMS").style.display="none"
+            document.querySelector(".QA_TMS").style.display="flex"
+            document.querySelector(".IC_TMS").style.display="none"
+
+
+            document.querySelector(".NOT_QA").style.borderWidth="0px"
+            document.querySelector(".NOT_QA").style.backgroundColor="#1A4990"
+            document.querySelector(".NOT_AC_TEXT_QA").style.color = "#ffffff";
+
+            document.querySelector(".NOT_IC").style.borderWidth="1px"
+            document.querySelector(".NOT_IC").style.backgroundColor="#ffffff"
+            document.querySelector(".NOT_AC_TEXT_IC").style.color = "#333";
+
+            document.querySelector(".NOT_TR").style.borderWidth="1px"
+            document.querySelector(".NOT_TR").style.backgroundColor="#ffffff"
+            document.querySelector(".NOT_AC_TEXT_TR").style.color = "#333";
+
+        }
+        
+        

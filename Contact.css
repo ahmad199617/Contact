@@ -600,6 +600,7 @@
             .info-M{
                 width: 50%;
                 display: flex;
+                flex-direction: column;
             }
             .Contact-M {
                 width: 50%;
@@ -681,6 +682,7 @@
                 justify-content: center;
                 align-items: center;
                 height: 40px;
+                border: none;
             }
             .text-info-Mesa{
 
@@ -694,9 +696,46 @@
                 font-size: 1.3vw;
                 
             }
+            .TMS_DIV_BUTTON {
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .TMS_DIV_TEXT {
+                background-color: #1A4990;
+                cursor: pointer;
+                height: 40px;
+                display: flex;
+                width: 100px;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-style: solid;
+                border-width: 0px;
+                transition: all 0.5s;
+            }
+
+            .TMS_TEXT_P{                
+                
+                margin: 0;
+                color: #ffffff;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+                        
+            .NOT_QA{background-color: white;border-width: 1px;}
+            .NOT_IC{background-color: white;border-width: 1px;}
+            .NOT_AC_TEXT_QA{color: #333;}
+            .NOT_AC_TEXT_IC{color: #333;}
+            
+
+
+
             /* ****************Contact hovar**********************/
-            
-            
             
             
             /* ****************Contact phone**********************/
